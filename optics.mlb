@@ -1,0 +1,18 @@
+local
+  $(SML_LIB)/basis/basis.mlb
+in
+   ann
+      "forceUsed"
+      "sequenceNonUnit warn"
+      "warnUnused true"
+   in
+     local
+       util.sml
+       optics.sig
+       optics.sml
+     in
+       signature OPTICS
+       structure Optics
+     end
+   end
+end
